@@ -3,11 +3,13 @@ import { Component, computed, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { Observable, of } from 'rxjs';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { TaskListComponent } from './task-list/task-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule, CommonModule],
+  imports: [RouterOutlet, FormsModule, CommonModule, UserProfileComponent, TaskListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -21,6 +23,8 @@ export class AppComponent {
   age = signal<number>(41);
 
   phoneNumber = signal<number>(66654195222);
+
+  //dateOfBirth = signal<Date>()
 
   // add computed signal value
 

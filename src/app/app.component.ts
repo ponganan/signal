@@ -5,11 +5,12 @@ import { RouterOutlet } from '@angular/router';
 import { Observable, of } from 'rxjs';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { TaskListComponent } from './task-list/task-list.component';
+import { SalesComponent } from './sales/sales.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule, CommonModule, UserProfileComponent, TaskListComponent],
+  imports: [RouterOutlet, FormsModule, CommonModule, UserProfileComponent, TaskListComponent, SalesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
